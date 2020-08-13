@@ -1,0 +1,688 @@
+@import "~animate.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #1c1c1c;
+    color: #fff;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/15.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(34, 34, 34, 0.51);
+}
+
+.banner-text {
+    animation: flipInY;
+    animation-duration: 5s;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-text h1 {
+    animation: bounceIn;
+    animation-duration: 5s;
+    letter-spacing: 10px;
+    margin: -25px 0 -10px;
+    font-size: 9em;
+}
+
+.banner-text h2 {
+    animation: swing;
+    animation-duration: 3s;
+    font-size: 4em;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.banner-text h3 {
+    animation: flipInX;
+    animation-duration: 1s;
+    position: relative;
+    margin-top: 6px;
+    font-size: 3em;
+}
+
+.banner-text h3:before {
+    animation: flipInX;
+    animation-duration: 4s;
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 290px;
+    height: 3px;
+    left: -45px;
+    top: -2px;
+}
+
+.banner-text h4 {
+    animation: fadeInLeft;
+    animation-duration: 1s;
+    font-size: 2em;
+    margin: 0;
+}
+
+.banner-text h5 {
+    animation: fadeInRight;
+    animation-duration: 1s;
+    font-size: 2em;
+    margin: 0;
+}
+
+.banner-text span {
+    animation: flipInY;
+    animation-duration: 3s;
+    background: #fff;
+    padding: 0 10px;
+    color: #222;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 36px;
+}
+
+.banner-text p {
+    animation: bounceInUp;
+    animation-duration: 1s;
+    font-size: 1.5em;
+}
+
+.banner-text i {
+    font-size: 50px;
+    height: 48px;
+    display: flex;
+}
+
+
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+}
+
+.telegramm{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    outline: none;
+}
+
+.telegramm a {
+    font-size: 48px;
+}
+
+.telegramm a:hover {
+    color: #329fff;
+}
+
+.btn-group {
+    outline: none;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+button {
+    outline: none;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.btn:hover {
+    background: #329fff;
+}
+
+.sidebar-title {
+    outline: none;
+    text-align: center;
+    color: #fff;
+    background: #329fff;
+}
+
+.bm-burger-button {
+    padding: 20px;
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 23px;
+    top: 20px;
+    opacity: 1;
+}
+
+.bm-burger-bars {
+    background: #fff;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #373a47;
+    width: 100%;
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.40em;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list a{
+    outline: none;
+    color: #b8b7ad;
+    padding: 0.50em 1em;
+}
+
+.bm-item-list a:hover {
+    text-decoration: none;
+    color: #329fff;
+}
+
+.bm-item-list a span {
+    margin-left: 10px;
+}
+
+.bm-item {
+    display: inline-block;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.vignette {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("img/19.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(34, 34, 34, 0.94);
+}
+
+.vignette h2 {
+    animation: zoomInLeft;
+    animation-duration: 3s;
+    display: inline-block;
+    margin: 100px 5.5% 0;
+    text-align: left;
+    color: #fff;
+}
+
+.vignette h2 span {
+    font-size: 26px;
+    margin-left: 11px;
+}
+
+.card-container {
+    animation: fadeIn;
+    animation-duration: 2s;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-container .cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1% 3%;
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-container .cards img {
+    position: absolute;
+    z-index: 0;
+    transform: scale(1.2);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.card-container .cards:hover img {
+    transform: scale(1);
+}
+
+.card-container .cards .card-info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.25);
+    justify-content: flex-end;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card-container .cards .card-info h5 {
+    font-size: 1.7em;
+    text-shadow: 0 0 1px #000, .5px .5px 1px #222, 2px 2px 1px #111;
+    margin: 0;
+}
+
+.card-container .cards .card-info span {
+    text-shadow: 0 0 1px #000, .5px .5px 1px #222, 2px 2px 1px #111;
+    color: #fff;
+    background: red;
+    width: 92px;
+    padding: 0 3px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.card-container .cards .card-info button {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(50, 159, 255, 100);
+    font-weight: 500;
+    font-size: 18px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card-container .cards .card-info h5,
+.card-container .cards .card-info span,
+.card-container .cards .card-info button {
+    margin: 2px;
+    transform: translateX(-200px);
+    transition: 0.2s ease;
+    transition-delay: .2s;
+}
+
+.card-container .cards:hover .card-info {
+    opacity: 1;
+}
+
+.card-container .cards:hover .card-info h5,
+.card-container .cards:hover .card-info span,
+.card-container .cards:hover .card-info button {
+    transform: translateX(0);
+    transition: 0.2s ease;
+    transition-delay: .2s;
+}
+
+.card-container .cards .card-info button:hover {
+    background: rgb(39, 115, 255);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.76);
+    display: none;
+}
+
+.lightbox .carousel {
+    position: absolute;
+    top: 50%;
+    z-index: 6;
+    width: 100%;
+    height: 100vh;
+}
+
+.lightbox .carousel .right,
+.lightbox .carousel .left {
+    font-size: 28px;
+    padding: 0 6px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.5);
+    color: #222;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.lightbox .carousel .right {
+    position: absolute;
+    padding: 0px 8px;
+    right: 1%;
+}
+
+.lightbox .carousel .left {
+    position: absolute;
+    padding: 0px 8px;
+    left: 1%;
+}
+
+.lightbox .carousel .right:hover,
+.lightbox .carousel .left:hover {
+    background: #329fff;
+    color: #fff;
+}
+
+.lightbox .closes {
+    color: rgba(255,255,255,.5);
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    height: 37px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    transition: .2s ease-in;
+}
+
+.lightbox .closes:hover {
+    color: #ff4646;
+}
+
+.lightbox img {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.block-photos {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.large-photos, .medium-photos, .small-photos {
+    width: 100%;
+    margin: 0;
+}
+
+.block-photos img {
+    width: 100%;
+    padding: 0;
+    border: .1px solid rgba(255, 255, 255, 0.25);
+}
+
+.row {
+    margin-right: 0;
+}
+
+.about-banner {
+    background-image: url("img/2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-banner .about-title h2 {
+    text-shadow: 0 0 3px #111;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.about-banner .about-title p {
+    background: #fff;
+    color: #333;
+    display: inline-block;
+    padding: 1px 30px;
+}
+
+.about-info {
+    padding-bottom: 5em;
+    color: #fff;
+}
+
+.about-info .about-info-one {
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.about-info .about-info-photo img{
+    width: 100%;
+    border-radius: 200px;
+    padding: 0 10px;
+}
+
+.about-info .about-info-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 31px;
+}
+
+.about-info .about-info-two h3 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about-info .about-info-two span {
+    margin-bottom: 1em;
+}
+
+.about-info .about-info-two .about-info-icons a{
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    transform: rotateZ(10deg);
+}
+
+.about-info .about-info-two .about-info-icons a:hover {
+    color: #000000;
+}
+
+.footer {
+    width: 100%;
+    background: #111;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-title a{
+    color: #fff;
+    font-size: 23px;
+
+}
+
+.footer-title strong {
+    font-size: 20px;
+}
+
+.form-flex {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/8.jpg");
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form .container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.64);
+    padding: 3% 3%;
+    z-index: 1;
+}
+
+.form .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.28);
+
+}
+
+.form-title {
+    display: grid;
+}
+
+.form h2 {
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.row100 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+.row100 .col .inputBox {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px 10px;
+    position: relative;
+}
+
+.form .row100 .col {
+    padding: 20px 0;
+}
+
+.form .row100 .col .inputBox .text {
+    transition: .2s ease-in;
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    bottom: 2px;
+    left: 3px;
+}
+
+.form .row100 .col .inputBox input, textarea {
+    transition: .2s ease-in;
+    outline: none;
+    background: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+    padding: 3px;
+}
+
+.form .row100 .col .inputBox input:focus,
+.form .row100 .col .inputBox input:valid {
+    transition: .2s ease-in;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.form .row100 .col .inputBox textarea:focus,
+.form .row100 .col .inputBox textarea:valid {
+    transition: .2s ease-in;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.form .row100 .col .inputBox input:focus + .text,
+.form .row100 .col .inputBox input:valid + .text {
+    transition: .2s ease-in;
+    bottom: 32px;
+    left: 0;
+}
+
+.form .row100 .col .inputBox textarea:focus + .text,
+.form .row100 .col .inputBox textarea:valid + .text {
+    transition: .2s ease-in;
+    bottom: 62px;
+    left: 0;
+}
+
+.row100 .col .form-btn {
+    transition: .2s ease-in;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 36px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.row100 .col .form-btn:hover {
+    transition: .2s ease-in;
+    background: #fff;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
